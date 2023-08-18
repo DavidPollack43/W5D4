@@ -20,9 +20,9 @@
 #   Enrollment.create!(student_id: user1.id, course_id: course2.id)
 #   Enrollment.create!(student_id: user2.id, course_id: course2.id)
 
-david = User.create!(email: "David@gmail.com")
-davis = User.create!(email: "Davis@gmail.com")
+# david = User.create!(email: "David@gmail.com")
+# davis = User.create!(email: "Davis@gmail.com")
 
-su1 = ShortenedUrl.create!(long_url: "testing123",user_id: david.id)
-su2 = ShortenedUrl.create!(long_url: "another_testing123", user_id: davis.id)
+# su1 = ShortenedUrl.create!(long_url: "testing123",user_id: david.id)
+# su2 = ShortenedUrl.create!(long_url: "another_testing123", user_id: davis.id)
 
