@@ -13,6 +13,11 @@ class ShortenedUrl < ApplicationRecord
     validates :short_url, presence: true, uniqueness: true
     validates :long_url, presence: true, uniqueness: true
 
+    belongs_to :submitter,
+        primary_key: :id, 
+        foreign_key: :user_id,
+        class_name: :User
+
    after_initialize :generate_short_url if :new_record
 
     def self.random_code
